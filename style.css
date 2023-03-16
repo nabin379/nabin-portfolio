@@ -54,11 +54,19 @@
     justify-content: space-around;
 }
 .devpic img {
-    height: 45vh;  
-    border-radius: 176px;
+    
+    border-radius: 102px;
+    padding-top: 7px;
+    height: 60%;  
+    
 }
+@media (max-width: 768px) {
+    .dev img {
+      width: 100%;
+    }
+  }
 .devinfo{
-    font-size: 16px;
+    font-size: 0.9em;
     display: flex;
     justify-content: center;
     flex-direction: column;

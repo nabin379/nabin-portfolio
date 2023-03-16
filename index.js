@@ -30,27 +30,27 @@ document.querySelector(".hamburger").addEventListener("click", ()=>{
 
 
 
-const form = document.getElementById('contact-form');
+// const form = document.getElementById('contact-form');
 
-// Handle form submission
-form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+// // Handle form submission
+// form.addEventListener('submit', (event) => {
+//     event.preventDefault(); // Prevent default form submission behavior
 
-    // Get form data
-    const formData = new FormData(form);
-    console.log('script is running')
-    // Send form data to server using fetch()
-    fetch('path/to/server/script', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Handle successful form submission
-        console.log(data);
-    })
-    .catch(error => {
-        // Handle form submission error
-        console.error(error);
-    });
-});
+//     // Get form data
+//     const formData = new FormData(form);
+//     console.log('script is running')
+//     // Send form data to server using fetch()
+//     fetch('path/to/server/script', {
+//         method: 'POST',
+//         body: formData
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         // Handle successful form submission
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         // Handle form submission error
+//         console.error(error);
+//     });
+// });

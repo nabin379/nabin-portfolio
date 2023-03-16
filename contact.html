@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabin Bhattarai</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar sidebargo">
+      <nav>
+          <ul>
+              <li><img src="/img/profile.png" alt=""></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/intro.html">Intro</a></li>
+              <!-- <li><a href="/services.html">Services</a></li> -->
+              <li><a href="/contact.html">Contact Me</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+          </ul>
+      </nav>
+      
+  </div>
+    <div class="main">
+      <div class="hamburger">
+        <img class="ham"  src="./img/hamburger.png" alt="" width="21px">
+        <img src="img/cross.png" alt="cross" class="cross" width="21px">
+    </div>
+
+    <div class="contactform">
+      <h1>Contact me for work/general Enquires</h1>
+      <form action="#" id="contact-form">
+        <div class="mb-3">
+          <label for="name" class="form-label" required>Name:</label>
+          <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address:</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+          <div id="emailHelp" style="font-size: 11px;" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone:</label>
+          <input type="tel" class="form-control" id="phone" name="phone">
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Enquiry:</label>
+          <input type="text" class="form-control" id="subject" name="subject" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <input type="checkbox" class="form-check-input" id="message" name="message">
+          <label class="form-check-label" for="message">I want you to work on project with me</label>
+        </div>
+        <button type="submit" class="btn btn-sm">Submit</button>
+      </form>
+    </div>
+     
+        <!-- <div class="contactform">
+            <h1>Contact me for work/general Enquires</h1>
+            <form action="#" id="contact-form">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label" required>Name</label>
+                    <input type="name" class="form-control" id="name" " aria-describedby="emailHelp">
+                    <div 
+                    
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email"  aria-describedby="emailHelp">
+                  <div id="emailHelp" style="font-size: 11px;" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="phone" class="form-control"id="name" >
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Enquiry</label>
+                    <input type="name" class="form-control" id="subject"  aria-describedby="emailHelp">
+                    <div 
+                <div class="mb-3 ">
+                  <input type="checkbox" class="form-check-input" id="message" >
+                  <label class="form-check-label" for="message">I want you to work on project with me</label>
+                </div>
+                <button type="submit" class="btn btn-sm">Submit</button>
+              </form>
+        </div> -->
+    </div>
+  </div>
+  
+
+  <!-- <script>
+    // Define the JSON object
+    const jsonData = {
+      "name": "John Smith",
+      "email": "john@example.com",
+      "phone": "555-1234",
+      "subject": "Website redesign",
+      "message": true
+    };
+
+    // Get the form element
+    const form = document.getElementById('contact-form');
+
+    // Handle form submission
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent default form submission behavior
+
+      // Send form data to server using fetch()
+      fetch('path/to/server/script', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(jsonData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Handle successful form submission
+        console.log(data);
+      })
+      .catch(error => {
+        // Handle form submission error
+        console.error(error);
+      });
+    });
+  </script> -->
+  <script src="index.js"></script>
+  
+</body>
+</html>
